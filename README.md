@@ -24,8 +24,7 @@ Note: this map is currently in public beta and still being completed, so there w
 
 Contact me if you wish to notify me. using the things below
 	
-Contact me using discord @
-	citillan mapping#8186
+Contact me using discord @citillan mapping#8186
   
 and visit my nation @
 	https://www.nationstates.net/nation=citalli
