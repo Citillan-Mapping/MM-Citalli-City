@@ -30,9 +30,9 @@ Note: this map is currently in public beta and still being completed, so there w
 
 Contact me if you wish to notify me. using the things below:
 
-Contact me using discord @citillan mapping#8186
-Support me and my patreon to help me and for me to keep on working @ https://www.patreon.com/Citillan
-and visit my nation @ https://www.nationstates.net/nation=citalli
+Contact me using discord @citillan mapping#8186,
+Support me and my patreon to help me and for me to keep on working @ https://www.patreon.com/Citillan,
+and visit my nation @ https://www.nationstates.net/nation=citalli.
 
 this map and other maps in my series, will be released on my github too.
 Updates and Bugfixes TBA and TBD. so stay tuned by joining the Mini Metro Community Discord Server, I will start my own soon, so stay tuned...
