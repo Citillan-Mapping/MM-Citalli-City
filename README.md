@@ -1,5 +1,5 @@
 # Citalli City
-**A map I made for the hit indie game Mini Metro
+**A map I made for the hit indie game Mini Metro**
 
 Travel bound the snow and ice and take charge of the vast and enormous metro system of this futuristic technocratic metropolis. Can you unify the far ends of this bustling and lively polar capital of 55 million?
 
@@ -9,7 +9,7 @@ this is the first of the Citillan Alternative Future series of maps to come to M
 
 
 
-**Features and new things to come!!!
+**Features and new things to come!!!**
 
 * A vast starting fleet and generous supplies to help you jumpstart this city's vast public transport network.
 * 3 tiers of Assets waiting for you to keep up with this fast growing city.
@@ -26,7 +26,7 @@ Note: this map is currently in public beta and still being worked on, so there w
 
 
 
-**If you wish to contact me, use and refer to the resources provided below
+**If you wish to contact me, use and refer to the resources provided below**
 
 Contact me using discord @
 citillan mapping#8186
