@@ -37,7 +37,7 @@ https://www.nationstates.net/nation=citalli
 this map and other maps in my series, will be released on my github too @
 https://github.com/Citillan-Mapping
 
-Consider supporting me on my patreon to help me keep on working and making maps like this one @ https://www.patreon.com/Citillan
+Consider supporting me to help me keep on working and making maps like this one @ https://www.buymeacoffee.com/citillan
 
 This map is licensed under the GNU AGPLv3 (GNU AFFERO GENERAL PUBLIC LICENSE version 3), on both steam and github and have and will be so for all my assets.
 
