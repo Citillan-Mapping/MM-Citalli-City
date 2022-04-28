@@ -1,0 +1,83 @@
+{
+	"author": "Citillan",
+	"id": "Citalli_City",
+	"base": "city",
+
+	"constants": {
+
+		"Rhythms": [16, 12, 8, 4],
+		"LineLoop_Pulse": 16,
+
+		"PeepEmbarks_Flam_Pulse": 16,
+		"PeepEmbarks_Rhythm": 1,
+		"PeepAppears_Flam_Pulse": 16,
+		"PeepAppears_Step_Standard": 32,
+		"PeepAppears_Step_Special": 32,
+		"TrainArrives_Rhythm": 32,
+		"Percussion_PitchVar": 0.5,
+
+
+		"VoiceLimit_FadeTime": 0.75,
+		"VoiceLimit_Static": 3,
+
+		"Transpositions": [0],
+		"FadeIn_Times": [0.8, 0.6, 0.4, 0.2],
+
+		"Train_Engines": ["Scooter" , "TwelveSixteen" , "Orange" , "Shinkansen"]
+	},
+
+	"harmonies": {
+
+		"assignments": [0, 1, 2, 3, 4, 5, 6, 0, 1, 2, 3, 4, 5, 6, 0, 1, 2, 3],
+		"order": [0, 0, 1, 1, 2],
+
+		"weeks": [
+
+			{	"sequences": [["D#4" , "F4", "G4"] , ["C3" , "G3"] , ["G3" , "D3"] , ["F3" , "F3" , "G3" , "G3"] , ["D#3" , "F3" , "D#3"] , ["A#4" , "G#4" , "G4"] , ["C5", "D4", "D#4"] , ["C4", "G3", "C4", "G4", "E4"] , ["C4", "D#4", "F4", "F#4", "F4", "D#4", "C4", "A#3", "D4", "C4"]],
+				"bass":  ["B",  "C4", "F3",  "A#3",  "G#3"],
+				"screens": {
+
+					"GameOver": ["D",	"D4", "A4", "F4", "G4", "A4", "C4", "D5"],
+					"NewAsset": ["E",	"G4", "A4", "B4" ]
+				}
+			},
+			{	"sequences": [["A#3"], ["F3" , "C3"] , ["C3", "F4" , "G3"], [ "B3" , "B3" , "C3" , "C3" ], ["A3" , "B3"  ], ["D#4" , "D4" , "C4"] ,["F5", "G4", "D4"]],
+				"bass":  ["F"],
+				"screens": {
+
+					"GameOver": ["D",	"D4", "A4", "F4", "G4", "A4", "C4", "D5"],
+					"NewAsset": ["E",	"G4", "A4", "B4" ]
+				}
+			},
+			{	"sequences": [["F4" , ""], ["F3" , "C3"] , ["C3", "F4" , "G3"], [ "B3" , "B3" , "C3" , "C3" ], ["A3" , "B3"  ], ["D#4" , "D4" , "C4"] ,["F5", "G4", "D4"]],
+				"bass":  ["F"],
+				"screens": {
+
+					"GameOver": ["F",	"F4", "G#4", "C#5", "F5"],
+					"NewAsset": ["D",	"D5" , "F#5" , "A5"]
+				}
+			}
+
+		]
+	},
+
+	"modules": [
+	{
+			"type": "Beat",
+			"filter": { "type": "CityStart" },
+			"Rhythms": [40, 32, 26],
+			"Rhythms_Double": [18, 16, 12],
+			"StartingWeekIndex": 0,
+			"gain": 2,
+			"pulse": 16
+		},
+		{
+			"id": "PeepImpatient",
+			"type": "PeepImpatient",
+			"filter": { "type": "PeepImpatient" },
+			"Gain": "PeepImpatient_Gain",
+			"Event_Limit": 1,
+			"pulse": 1
+		},
+		]
+}

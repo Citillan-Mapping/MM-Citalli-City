@@ -4,16 +4,16 @@
 	"locomotives": [
 		{
 			"type": "Locomotive",
-			"speed": 1200,
-			"acceleration": 720,
-			"deceleration": 1080,
+			"speed": 2000,
+			"acceleration": 1500,
+			"deceleration": 1800,
 			"capacity": 4
 		},
 		{
 			"type": "Shinkansen",
-			"speed": 3600,
-			"acceleration": 1080,
-			"deceleration": 1800,
+			"speed": 4000,
+			"acceleration": 3000,
+			"deceleration": 3600,
 			"capacity": 4
 		}
 	]

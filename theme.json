@@ -1,33 +1,33 @@
 {
-	"name": "Confetti/Prism",
+	"name": "Confetti/Polar Ice",
 	"backgroundColor": {
-		"day": [220, 210, 175],
-		"night": [40, 0, 70]
+		"day": [250,200,135],
+		"night": [75,85,105]
 	},
 	"peepColor": {
 		"day": [145,145,145],
-		"night": [170, 170, 170]
+		"night": [230,235,240]
 	},
 	"waterColor": {
 		"internal": {
-			"day": [180,180,180],
-			"night": [45, 70, 110],
+			"day": [170,170,170],
+			"night": [95,130,170],
 		},
 		"outline": {
 			"day": [140,140,140],
-			"night": [147,212,240],
+			"night": [130,160,190],
 		},
 		"outlineWidth": 2.5,
-		"previewOutlineWidth": 2,
+		"previewOutlineWidth": 1,
 	},
 	"stationColor": {
 		"internal": {
-			"day": [255, 255, 255],
-			"night": [220, 210, 175]
+			"day": [200,200,200],
+			"night": [90,90,90],
 		},
 		"outline": {
-			"day": [145, 145, 145],
-			"night": [95, 95, 95]
+			"day": [145,145,145],
+			"night": [145,145,145],
 		},
 		"outlineWidth": 7.0
 	},
@@ -39,14 +39,15 @@
 		{"day": [255,255,50], "note": "Line 5"},
 		{"day": [150,200,50], "note": "Line 6"},
 		{"day": [50,150,50], "note": "Line 7"},
-		{"day": [50,150,255], "note": "Line 8"},
+		{"day": [50,200,200], "note": "Line 8"},
 		{"day": [50,50,255], "note": "Line 9"},
-		{"day": [150,50,255], "note": "Line 10"},
-		{"day": [255,50,255], "note": "Line 11"},
+		{"day": [100,50,225], "note": "Line 10"},
+		{"day": [150,50,255], "note": "Line 11"},
 		{"day": [255,50,150], "note": "Line 12"},
-		{"day": [200,150,100], "note": "Line 13"},
-		{"day": [150,150,150], "note": "Line 14"},
-		{"day": [100,100,100], "note": "Line 15"},
-		{"day": [0,0,0], "note": "Line 16"},
+		{"day": [150,100,50], "note": "Line 13"},
+		{"day": [200,150,100], "note": "Line 14"},
+		{"day": [50,50,50], "note": "Line 15"},
+		{"day": [75,75,75], "note": "Line 16"},
 	]
 }
+"75,100,75 park"

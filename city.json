@@ -3,22 +3,23 @@
 	"customName":"Citalli City",
 	"customLocalName": "Ciudad Citallya",
 	"customLocalNameLocale": "es_MX",
-	"customCountryName":"Citalli",
-	"customDescription":"Take charge of the vast and enormous metro system of this futuristic technocratic metropolis. Can you unify the far ends of this bustling and lively polar capital of 55 million?",
+	"customCountryName":"Citalli, Federal Technocratic Kingdom of",
+	"customDescription":"Travel bound the snow and ice to connect the vast and enormous metro system of this futuristic polar metropolis of 55 million",
 	"lineCount": 16,
-	"crossingStyle": "Tunnel",
-	"audioLoadoutId": "stockholm",
+	"crossingStyle": "Bridge",
+	"audioLoadoutId": "Citalli_City",
+	"debugShowCityAreas": false,
 
-	"theme":"Confetti/Prism",
+	"theme":"Confetti/Polar Ice",
 
 	"obstacles": [
 		{
 			"note": "The Background",
 			"points": [
-				[-1680.0,1100.0],
-				[1690.0,1100.0],
-				[1690.0,-1100.0],
-				[-1680.0,-1100.0],
+				[-2000.0,1400.0],
+				[2000.0,1400.0],
+				[2000.0,-1400.0],
+				[-2000.0,-1400.0],
 			],
 			"visual": true,
 			"inverted": true,
@@ -29,8 +30,8 @@
 		{
 			"points": [
 				[-1668.168,-754.1],
-				[-1671.382,-1107.388],
-				[1267.001,-1103.404],
+				[-1671.382,-1100.388],
+				[1267.001,-1100.404],
 				[1270.024,-1006.667],
 				[1294.208,-940.161],
 				[1451.406,-882.723],
@@ -139,7 +140,7 @@
 			"decoration": false,
 			"inPreview": true,
 			"cornerRadius": 1.0,
-			"fixPreview": false,
+			"fixPreview": true,
 		},
 		{
 			"points": [
@@ -177,8 +178,7 @@
 			"inverted": true,
 			"decoration": false,
 			"inPreview": true,
-			"alpha": 255,
-			"cornerRadius": 0.5,
+			"cornerRadius": 1.0,
 		},
 		{
 			"points": [
@@ -329,18 +329,18 @@
 		}
 	],
 
-	"origin": [0,0],
+	"origin": [200,200],
 	"zoom": {
-		"start": 1.35,
+		"start": 1.50,
 		"end": 0.35,
-		"earlyZoom": 2.5,
-		"lateZoom": 2.5,
-		"delay": 1,
-		"duration": 35
+		"earlyZoom": 2.0,
+		"lateZoom": 1.25,
+		"delay": 0,
+		"duration": 40
 	},
 	"startArea":{
-		"rightBottom": [0.1,0.1],
-		"leftTop": [0.1,0.1],
+		"rightBottom": [0.15,0.2],
+		"leftTop": [0.2,0.15],
 	},
 
 	"cityAreas": [
@@ -358,9 +358,9 @@
 					]
 				}
 			],
-			"density": 0.7,
+			"density": 1.75,
 			"stationSpawns": [
-				{"type": "SPECIAL", "weight": 1.25, "maximum": 3, "activeDay": -1},
+				{"type": "PENTAGON", "weight": 1.25, "maximum": 4, "activeDay": -1},
 			]
 		},
 		{
@@ -377,7 +377,7 @@
 					]
 				}
 			],
-			"density": 0.5,
+			"density": 1.0,
 			"stationSpawns": [
 				{"type": "CIRCLE", "weight": 1.0, "maximum": -1, "activeDay": -1},
 			]
@@ -400,9 +400,10 @@
 			],
 			"density": 1.3,
 			"stationSpawns": [
-				{"type": "CIRCLE", "weight": 1.1, "maximum": -1, "activeDay": -1},
-				{"type": "TRIANGLE", "weight": 1.1, "maximum": -1, "activeDay": -1},
-				{"type": "SPECIAL", "weight": 1.25, "maximum": -1, "activeDay": -1},
+				{"type": "CIRCLE", "weight": 1.10, "maximum": -1, "activeDay": -1},
+				{"type": "TRIANGLE", "weight": 1.25, "maximum": -1, "activeDay": -1},
+				{"type": "SQUARE", "weight": 1.50, "maximum": -1, "activeDay": -1},
+				{"type": "SPECIAL", "weight": 1.45, "maximum": -1, "activeDay": -1},
 			]
 		},
 		{
@@ -425,9 +426,10 @@
 			],
 			"density": 1.35,
 			"stationSpawns": [
-				{"type": "CIRCLE", "weight": 2.5, "maximum": -1, "activeDay": -1},
-				{"type": "TRIANGLE", "weight": 1.75, "maximum": -1, "activeDay": -1},
-				{"type": "SPECIAL", "weight": 1.65, "maximum": -1, "activeDay": -1},
+				{"type": "CIRCLE", "weight": 1.75, "maximum": -1, "activeDay": -1},
+				{"type": "TRIANGLE", "weight": 1.65, "maximum": -1, "activeDay": -1},
+				{"type": "SQUARE", "weight": 1.35, "maximum": -1, "activeDay": -1},
+				{"type": "SPECIAL", "weight": 1.35, "maximum": -1, "activeDay": -1},
 			]
 		},
 		{
@@ -443,7 +445,7 @@
 					]
 				}
 			],
-			"density": 1.15,
+			"density": 1.10,
 			"stationSpawns": [
 				{"type": "CIRCLE", "weight": 0.6, "maximum": -1, "activeDay": -1},
 				{"type": "TRIANGLE", "weight": 0.5, "maximum": -1, "activeDay": -1},
@@ -469,10 +471,10 @@
 					]
 				}
 			],
-			"density": 1.2,
+			"density": 1.25,
 			"stationSpawns": [
-				{"type": "CIRCLE", "weight": 1.0, "maximum": -1, "activeDay": -1},
-				{"type": "TRIANGLE", "weight": 1.0, "maximum": -1, "activeDay": -1},
+				{"type": "CIRCLE", "weight": 1.5, "maximum": -1, "activeDay": -1},
+				{"type": "TRIANGLE", "weight": 1.25, "maximum": -1, "activeDay": -1},
 				{"type": "SPECIAL", "weight": 0.5, "maximum": -1, "activeDay": -1},
 			]
 		},
@@ -490,7 +492,7 @@
 					]
 				}
 			],
-			"density": 1.30,
+			"density": 1.40,
 			"stationSpawns": [
 				{"type": "CIRCLE", "weight": 1.5, "maximum": -1, "activeDay": -1},
 				{"type": "TRIANGLE", "weight": 0.9, "maximum": -1, "activeDay": -1},
@@ -511,10 +513,11 @@
 					]
 				}
 			],
-			"density": 1.20,
+			"density": 1.15,
 			"stationSpawns": [
-				{"type": "CIRCLE", "weight": 0.75, "maximum": -1, "activeDay": -1},
+				{"type": "CIRCLE", "weight": 0.50, "maximum": -1, "activeDay": -1},
 				{"type": "TRIANGLE", "weight": 1.25, "maximum": -1, "activeDay": -1},
+				{"type": "SQUARE", "weight": 1.0, "maximum": -1, "activeDay": -1},
 				{"type": "SPECIAL", "weight": 1.0, "maximum": -1, "activeDay": -1},
 			]
 		},
@@ -534,8 +537,9 @@
 			],
 			"density": 1.55,
 			"stationSpawns": [
-				{"type": "CIRCLE", "weight": 1.1, "maximum": -1, "activeDay": -1},
-				{"type": "TRIANGLE", "weight": 1.1, "maximum": -1, "activeDay": -1},
+				{"type": "CIRCLE", "weight": 0.65, "maximum": -1, "activeDay": -1},
+				{"type": "TRIANGLE", "weight": 1.5, "maximum": -1, "activeDay": -1},
+				{"type": "SQUARE", "weight": 1.0, "maximum": -1, "activeDay": -1},
 				{"type": "SPECIAL", "weight": 1.5, "maximum": -1, "activeDay": -1},
 			]
 		},
@@ -553,10 +557,11 @@
 					]
 				}
 			],
-			"density": 1.4,
+			"density": 1.40,
 			"stationSpawns": [
 				{"type": "CIRCLE", "weight": 1.75, "maximum": -1, "activeDay": -1},
 				{"type": "TRIANGLE", "weight": 1.3, "maximum": -1, "activeDay": -1},
+				{"type": "SQUARE", "weight": 1.3, "maximum": -1, "activeDay": -1},
 				{"type": "SPECIAL", "weight": 0.8, "maximum": -1, "activeDay": -1},
 			]
 		},
@@ -565,35 +570,33 @@
 			"paths": [
 				{
 					"points": [
-						[-85.7,174.891],
-						[22.87,172.72],
-						[22.632,35.97],
-						[292.826,37.245],
-						[296.649,-73.637],
-						[-83.151,-72.362],
+						[50,300],
+						[300,300],
+						[300,50],
+						[50,50],
 					]
 				}
 			],
 			"density": 2.25,
 			"stationSpawns": [
-				{"type": "SPECIAL", "weight": 10.0, "maximum": -1, "activeDay": -1},
+				{"type": "SPECIAL", "weight": 10.0, "maximum": -1, "activeDay": 16},
 			]
 		},
 		{
-			"label": "Piazza Roma",
+			"label": "D12",
 			"paths": [
 				{
 					"points": [
-						[299.313,176.641],
+						[300.000,175.000],
 						[593.402,170.76],
 						[589.784,7.931],
 						[385.864,11.755],
-						[345.08,70.382],
-						[296.649,72.931],
+						[345.000,70.000],
+						[300.000,70.000],
 					]
 				}
 			],
-			"density": 1.35,
+			"density": 1.40,
 			"stationSpawns": [
 				{"type": "CIRCLE", "weight": 1.5, "maximum": -1, "activeDay": -1},
 				{"type": "TRIANGLE", "weight": 1.5, "maximum": -1, "activeDay": -1},
@@ -614,7 +617,7 @@
 					]
 				}
 			],
-			"density": 1.3,
+			"density": 1.35,
 			"stationSpawns": [
 				{"type": "CIRCLE", "weight": 1.5, "maximum": -1, "activeDay": -1},
 				{"type": "TRIANGLE", "weight": 1.5, "maximum": -1, "activeDay": -1},
@@ -622,7 +625,7 @@
 			]
 		},
 		{
-			"label": "District 14",
+			"label": "D14",
 			"paths": [
 				{
 					"points": [
@@ -656,7 +659,7 @@
 					]
 				}
 			],
-			"density": 1.25,
+			"density": 1.30,
 			"stationSpawns": [
 				{"type": "CIRCLE", "weight": 1.5, "maximum": -1, "activeDay": -1},
 				{"type": "TRIANGLE", "weight": 1.25, "maximum": -1, "activeDay": -1},
@@ -680,12 +683,13 @@
 			"density": 1.50,
 			"stationSpawns": [
 				{"type": "CIRCLE", "weight": 2.5, "maximum": -1, "activeDay": -1},
+				{"type": "SQUARE", "weight": 1.5, "maximum": -1, "activeDay": -1},
 				{"type": "TRIANGLE", "weight": 1.5, "maximum": -1, "activeDay": -1},
-				{"type": "SPECIAL", "weight": 1.5, "maximum": -1, "activeDay": -1},
+				{"type": "SPECIAL", "weight": 1.3, "maximum": -1, "activeDay": -1},
 			]
 		},
 		{
-			"label": "Monument Boulevard",
+			"label": "małapolska",
 			"paths": [
 				{
 					"points": [
@@ -699,14 +703,15 @@
 					]
 				}
 			],
-			"density": 1.0,
+			"density": 1.35,
 			"stationSpawns": [
-				{"type": "TRIANGLE", "weight": 1.5, "maximum": -1, "activeDay": -1},
-				{"type": "SPECIAL", "weight": 1.0, "maximum": -1, "activeDay": -1},
+				{"type": "SQUARE", "weight": 1.0, "maximum": -1, "activeDay": -1},
+				{"type": "CIRCLE", "weight": 1.75, "maximum": -1, "activeDay": -1},
+				{"type": "TRIANGLE", "weight": 1.25, "maximum": -1, "activeDay": -1},
 			]
 		},
 		{
-			"label": "Ice Palace",
+			"label": "D18",
 			"paths": [
 				{
 					"points": [
@@ -725,12 +730,13 @@
 			"density": 1.25,
 			"stationSpawns": [
 				{"type": "CIRCLE", "weight": 1.5, "maximum": -1, "activeDay": -1},
-				{"type": "TRIANGLE", "weight": 1.0, "maximum": -1, "activeDay": -1},
+				{"type": "TRIANGLE", "weight": 0.8, "maximum": -1, "activeDay": -1},
+				{"type": "SQUARE", "weight": 1.25, "maximum": -1, "activeDay": -1},
 				{"type": "SPECIAL", "weight": 1.25, "maximum": -1, "activeDay": -1},
 			]
 		},
 		{
-			"label": "19",
+			"label": "Parthenon",
 			"paths": [
 				{
 					"points": [
@@ -743,9 +749,9 @@
 					]
 				}
 			],
-			"density": 1.15,
+			"density": 1.35,
 			"stationSpawns": [
-				{"type": "CIRCLE", "weight": 1.5, "maximum": -1, "activeDay": -1},
+				{"type": "CIRCLE", "weight": 1.55, "maximum": -1, "activeDay": -1},
 				{"type": "TRIANGLE", "weight": 1.0, "maximum": -1, "activeDay": -1},
 				{"type": "SPECIAL", "weight": 1.0, "maximum": -1, "activeDay": -1},
 			]
@@ -765,7 +771,7 @@
 					]
 				}
 			],
-			"density": 1.35,
+			"density": 1.75,
 			"stationSpawns": [
 				{"type": "CIRCLE", "weight": 2.5, "maximum": -1, "activeDay": -1},
 			]
@@ -781,7 +787,7 @@
 					]
 				}
 			],
-			"density": 1.25,
+			"density": 1.30,
 			"stationSpawns": [
 				{"type": "CIRCLE", "weight": 1.0, "maximum": -1, "activeDay": -1},
 				{"type": "TRIANGLE", "weight": 1.0, "maximum": -1, "activeDay": -1},
@@ -789,7 +795,7 @@
 			]
 		},
 		{
-			"label": "Crystal Park",
+			"label": "Kaliaat Park",
 			"paths": [
 				{
 					"points": [
@@ -802,7 +808,7 @@
 					]
 				}
 			],
-			"density": 0.5,
+			"density": 1.1,
 			"stationSpawns": [
 				{"type": "CIRCLE", "weight": 0.5, "maximum": -1, "activeDay": -1},
 				{"type": "TRIANGLE", "weight": 1.5, "maximum": -1, "activeDay": -1},
@@ -810,7 +816,7 @@
 			]
 		},
 		{
-			"label": "Trade Centre",
+			"label": "D23",
 			"paths": [
 				{
 					"points": [
@@ -832,7 +838,7 @@
 			]
 		},
 		{
-			"label": "Krona Island",
+			"label": "Nordic Peaks",
 			"paths": [
 				{
 					"points": [
@@ -854,7 +860,7 @@
 			]
 		},
 		{
-			"label": "Spruce Peak",
+			"label": "D25",
 			"paths": [
 				{
 					"points": [
@@ -881,7 +887,7 @@
 			]
 		},
 		{
-			"label": "H26",
+			"label": "D26",
 			"paths": [
 				{
 					"points": [
@@ -910,12 +916,12 @@
 			]
 		},
 		{
-			"label": "Spruce Falls",
+			"label": "D27",
 			"paths": [
 				{
 					"points": [
-						[1308.073,-126.017],
-						[1372.663,-191.309],
+						[1308,-126],
+						[1372,-191],
 						[1640.15,70.561],
 						[1634.533,161.829],
 						[1408.468,162.531],
@@ -939,17 +945,17 @@
 			"paths": [
 				{
 					"points": [
-						[1286.309 105.658],
-						[1220.163 170.995],
-						[1486.4 418.502],
-						[1533.226 426.53],
-						[1563.997 534.898],
-						[1321.841 546.939],
-						[1321.841,571.02],
-						[1568.01,571.02],
-						[1609.485 587.075],
-						[1638.918 584.399],
-						[1629.553 443.922],
+						[1286.309,-105.658],
+						[1220.163,-170.995],
+						[1486.4,-418.502],
+						[1533.226,-426.53],
+						[1563.997,-534.898],
+						[1321.841,-546.939],
+						[1321.841,-571.02],
+						[1568.01,-571.02],
+						[1609.485,-587.075],
+						[1638.918,-584.399],
+						[1629.553,-443.922],
 					]
 				}
 			],
@@ -965,66 +971,57 @@
 			"paths": [
 				{
 					"points": [
-						[763.947,138.741],
-						[776.089,138.741],
-						[776.089,125.841],
-						[763.947,125.841],
+						[765.000,150.000],
+						[795.000,150.000],
+						[795.000,120.000],
+						[765.000,120.000],
 					]
 				}
 			],
-			"density": 1.0,
+			"density": 1.25,
 			"stationSpawns": [
-				{"type": "CIRCLE", "weight": 10.0, "maximum": 1, "activeDay": -1},
+				{"type": "CIRCLE", "weight": 10.0, "maximum": 1, "activeDay": 25},
 			]
 		}
 	],
-	"stationSeparationScale": .80,
+	"stationSeparationScale": .50,
 
 	"stationSpawns": {
 		"cooldown": 0,
 		"schedule": [
 			{
-				"numDays": 6,
+				"numDays": 7,
 				"randomness": 1.0,
-				"types": ["CIRCLE","CIRCLE","TRIANGLE","TRIANGLE","SPECIAL","CIRCLE","CIRCLE","TRIANGLE","TRIANGLE","SPECIAL"]
+				"types": ["CIRCLE","CIRCLE","CIRCLE","CIRCLE","TRIANGLE","TRIANGLE","SQUARE","SQUARE","SPECIAL","SPECIAL"]
 			},
 			{
-				"numDays": 12,
-				"randomness": 2.0,
-				"types": ["CIRCLE","CIRCLE","TRIANGLE","SQUARE","TRIANGLE","SPECIAL","SPECIAL","CIRCLE","CIRCLE","TRIANGLE","SQUARE","TRIANGLE","SPECIAL","SPECIAL"]
+				"numDays": 7,
+				"randomness": 1.0,
+				"types": ["CIRCLE","CIRCLE","TRIANGLE","TRIANGLE","TRIANGLE","TRIANGLE","SQUARE","SQUARE","SPECIAL","SPECIAL"]
 			},
 			{
-				"numDays": 16,
-				"randomness": 2.0,
-				"types": ["CIRCLE","CIRCLE","CIRCLE","TRIANGLE","TRIANGLE","SPECIAL","SPECIAL","CIRCLE","CIRCLE","CIRCLE","TRIANGLE","SPECIAL","SPECIAL","CIRCLE","SPECIAL","SPECIAL","CIRCLE","CIRCLE","CIRCLE","TRIANGLE","SPECIAL","SPECIAL"]
+				"numDays": 7,
+				"randomness": 1.0,
+				"types": ["CIRCLE","CIRCLE","TRIANGLE","TRIANGLE","SQUARE","SQUARE","SQUARE","SQUARE","SPECIAL","SPECIAL"]
 			},
 			{
-				"numDays": 14,
-				"randomness": 2.0,
-				"types": ["CIRCLE","CIRCLE","TRIANGLE","SQUARE","TRIANGLE","SPECIAL","SPECIAL","CIRCLE","CIRCLE","TRIANGLE","SQUARE","TRIANGLE","SPECIAL","SPECIAL","SPECIAL","SPECIAL","SPECIAL","SPECIAL",]
+				"numDays": 7,
+				"randomness": 1.0,
+				"types": ["CIRCLE","CIRCLE","TRIANGLE","TRIANGLE","SQUARE","SQUARE","SPECIAL","SPECIAL","SPECIAL","SPECIAL",]
 			},
 			{
-				"numDays": 16,
-				"randomness": 2.0,
-				"types": ["CIRCLE","CIRCLE","CIRCLE","TRIANGLE","TRIANGLE","SPECIAL","SPECIAL","CIRCLE","CIRCLE","CIRCLE","TRIANGLE","SPECIAL","SPECIAL","CIRCLE","SPECIAL","SPECIAL","CIRCLE","CIRCLE","CIRCLE","TRIANGLE","SPECIAL","SPECIAL"]
-			},
-			{
-				"numDays": 50,
-				"randomness": 2.0,
-				"types": ["CIRCLE","CIRCLE","CIRCLE","TRIANGLE","TRIANGLE","SPECIAL","SPECIAL","CIRCLE","CIRCLE","CIRCLE","TRIANGLE","SPECIAL","SPECIAL","CIRCLE","SPECIAL","SPECIAL","CIRCLE","CIRCLE","CIRCLE","TRIANGLE","SPECIAL","SPECIAL","CIRCLE","CIRCLE","CIRCLE","TRIANGLE","TRIANGLE","SPECIAL","SPECIAL","CIRCLE","CIRCLE","CIRCLE","TRIANGLE","SPECIAL","SPECIAL","CIRCLE","SPECIAL","SPECIAL","CIRCLE","CIRCLE","CIRCLE","TRIANGLE","SPECIAL","SPECIAL","CIRCLE","CIRCLE","CIRCLE","TRIANGLE","TRIANGLE","SPECIAL","SPECIAL","CIRCLE","CIRCLE","CIRCLE","TRIANGLE","SPECIAL","SPECIAL","CIRCLE","SPECIAL","SPECIAL","CIRCLE","CIRCLE","CIRCLE","TRIANGLE","SPECIAL","SPECIAL","CIRCLE","CIRCLE","CIRCLE","TRIANGLE","TRIANGLE","SPECIAL","SPECIAL","CIRCLE","CIRCLE","CIRCLE","TRIANGLE","SPECIAL","SPECIAL","CIRCLE","SPECIAL","SPECIAL","CIRCLE","CIRCLE","CIRCLE","TRIANGLE","SPECIAL","SPECIAL","CIRCLE","CIRCLE","CIRCLE","TRIANGLE","TRIANGLE","SPECIAL","SPECIAL","CIRCLE","CIRCLE","CIRCLE","TRIANGLE","SPECIAL","SPECIAL","CIRCLE","SPECIAL","SPECIAL","CIRCLE","CIRCLE","CIRCLE","TRIANGLE","SPECIAL","SPECIAL"]
-			},
-			{
-				"numDays": 14,
-				"randomness": 2.0,
-				"types": ["CIRCLE","CIRCLE","TRIANGLE","SQUARE","TRIANGLE","SPECIAL","SPECIAL","CIRCLE","CIRCLE","TRIANGLE","SQUARE","TRIANGLE","SPECIAL","SPECIAL","SPECIAL","SPECIAL","SPECIAL","SPECIAL",]
+				"numDays": 7,
+				"randomness": 1.0,
+				"types": ["CIRCLE","CIRCLE","TRIANGLE","TRIANGLE","SQUARE","SQUARE","SPECIAL","SPECIAL"]
 			},
 		],
-		"special": ["SQUARE","PENTAGON", "DIAMOND", "STAR", "CROSS", "WEDGE", "EGG"],
+		"special": ["DIAMOND", "STAR", "WEDGE", "EGG", "GEM", "CROSS"],
+		"military": ["PENTAGON"],
 	},
 	"passengerSpawnScale": 2.0,
 
 	"stationCapacity": 20,
-	"interchangeCapacity": 60,
+	"interchangeCapacity": 40,
 	"upgrades": {
 		"initial": [
 			"Line",
@@ -1039,6 +1036,10 @@
 			"Interchange",
 			"Crossing",
 			"Crossing",
+			"Crossing",
+			"Crossing",
+			"Carriage",
+			"Carriage",
 			"Carriage",
 			"Carriage",
 		],
@@ -1047,30 +1048,32 @@
 			[
 				{"type":"Locomotive","max": 0,"count": 2,"weight": 1.0,"week": 0},
 				{"type":"Carriage","max": 0,"count": 2,"weight": 1.0,"week": 0},
-				{"type":"Locomotive","max": 0,"count": 4,"weight": 0.05,"week": 0},
-				{"type":"Carriage","max": 0,"count": 4,"weight": 0.05,"week": 0},
-				{"type":"Shinkansen","max": 0,"count": 1,"weight": 0.10,"week": 0},
+				{"type":"Locomotive","max": 0,"count": 4,"weight": 0.20,"week": 0},
+				{"type":"Carriage","max": 0,"count": 4,"weight": 0.20,"week": 0},
+				{"type":"Shinkansen","max": 0,"count": 1,"weight": 0.33,"week": 0},
+				{"type":"Shinkansen","max": 0,"count": 2,"weight": 0.16,"week": 0},
 			],
 			[
 				{"type":"Crossing","max": 0,"count": 1,"weight": 1.0,"week": 0},
 				{"type":"Interchange","max": 0,"count": 1,"weight": 1.0,"week": 0},
-				{"type":"Crossing","max": 0,"count": 2,"weight": 0.05,"week": 0},
-				{"type":"Interchange","max": 0,"count": 2,"weight": 0.05,"week": 0},
-				{"type":"Line","max": 0,"count": 1,"weight": 0.12,"week": 0},
+				{"type":"Crossing","max": 0,"count": 2,"weight": 0.20,"week": 0},
+				{"type":"Interchange","max": 0,"count": 2,"weight": 0.20,"week": 0},
+				{"type":"Line","max": 0,"count": 1,"weight": 0.33,"week": 0},
+				{"type":"Line","max": 0,"count": 2,"weight": 0.16,"week": 0},
 			],
 			[
 				{"type":"Line","max": 0,"count": 1,"weight": 1.1,"week": 0},
-				{"type":"Locomotive","max": 0,"count": 1,"weight": 1.0,"week": 0},
-				{"type":"Carriage","max": 0,"count": 1,"weight": 1.0,"week": 0},
+				{"type":"Locomotive","max": 0,"count": 2,"weight": 1.0,"week": 0},
+				{"type":"Carriage","max": 0,"count": 2,"weight": 1.0,"week": 0},
 				{"type":"Interchange","max": 0,"count": 1,"weight": 1.0,"week": 0},
-				{"type":"Shinkansen","max": 0,"count": 1,"weight": 1.0,"week": 0},
+				{"type":"Shinkansen","max": 0,"count": 1,"weight": 1.1,"week": 0},
 				{"type":"Crossing","max": 0,"count": 1,"weight": 1.0,"week": 0},
-				{"type":"Line","max": 0,"count": 2,"weight": 0.05,"week": 0},
-				{"type":"Locomotive","max": 0,"count": 4,"weight": 0.05,"week": 0},
-				{"type":"Carriage","max": 0,"count": 4,"weight": 0.05,"week": 0},
-				{"type":"Crossing","max": 0,"count": 2,"weight": 0.05,"week": 0},
-				{"type":"Interchange","max": 0,"count": 2,"weight": 0.05,"week": 0},
-				{"type":"Shinkansen","max": 0,"count": 2,"weight": 0.05,"week": 0},
+				{"type":"Line","max": 0,"count": 2,"weight": 0.15,"week": 0},
+				{"type":"Locomotive","max": 0,"count": 4,"weight": 0.1,"week": 0},
+				{"type":"Carriage","max": 0,"count": 4,"weight": 0.1,"week": 0},
+				{"type":"Interchange","max": 0,"count": 2,"weight": 0.1,"week": 0},
+				{"type":"Shinkansen","max": 0,"count": 2,"weight": 0.15,"week": 0},
+				{"type":"Crossing","max": 0,"count": 2,"weight": 0.1,"week": 0},
 			],
 		]
 	},
@@ -1079,33 +1082,42 @@
 		{
 			"asset": "Line",
 			"title": "Metro Line",
-			"description": "A new line to grow your metro.",
+			"description": "A new line add to the Metro System and for Metrocars to run on",
 			"forceDescription": true,
 		},
 		{
 			"asset": "Locomotive",
-			"title": "MetroCar",
-			"description": "A new Metro Car for the growing metro.",
+			"title": "Metrocar",
+			"description": "A fast electric vehicle made to carry passengers along a Metro Line",
 			"forceDescription": true,
 		},
 		{
 			"asset": "Shinkansen",
 			"title": "Express Metrocar",
-			"description": "A new high speed Metro Car for the growing metro.",
+			"description": "A very fast electric vehicle made to carry passengers rapidly along a Metro Line",
 			"forceDescription": true,
 		},
 		{
 			"asset": "Interchange",
 			"title": "Metro Hub",
-			"description": "A Metro Station Expansion to hold more passengers and provide quicker transfers.",
+			"description": "A Metro Station Expansion that hold more passengers and provide quicker transfers",
+			"forceDescription": true,
+		},
+		{
+			"asset": "Carriage",
+			"title": "Metro Carriage",
+			"description": "A Metrocar attachment to carry around more passengers",
+			"forceDescription": true,
+		},
+		{
+			"asset": "Crossing",
+			"title": "Crossing",
+			"description": "A bridge made of steel and glass so a line cross over the city's icy waterways",
 			"forceDescription": true,
 		},
 	],
 
 		"trainDefinition": "Metrocar",
-
-		"stations": [
-		],
 
 		"lines": [
 			{
@@ -1147,22 +1159,17 @@
 				"name": "L8",
 				"maxTrains": 4,
 				"allowedTrains": ["Locomotive", "Shinkansen", "Carriage", "Crossing"],
-			}
+			},
 			{
 				"name": "L9",
 				"maxTrains": 4,
 				"allowedTrains": ["Locomotive", "Shinkansen", "Carriage", "Crossing"],
 			},
 			{
-				"name": "L9",
-				"maxTrains": 4,
-				"allowedTrains": ["Locomotive", "Shinkansen", "Carriage", "Crossing"],
-			}
-			{
 				"name": "L10",
 				"maxTrains": 4,
 				"allowedTrains": ["Locomotive", "Shinkansen", "Carriage", "Crossing"],
-			}
+			},
 			{
 				"name": "L11",
 				"maxTrains": 4,
@@ -1192,20 +1199,29 @@
 				"name": "L16",
 				"maxTrains": 4,
 				"allowedTrains": ["Locomotive", "Shinkansen", "Carriage", "Crossing"],
-			},
+			}
 		],
+
+				"stations": [
+				{"tag":"StartPi", "type": "circle"},
+				{"tag":"Start4S", "type": "square"},
+				{"tag":"Start3", "type": "triangle"},
+				{"tag":"Start4R", "type": "diamond"},
+				{"tag":"Start5", "type": "star"},
+				{"tag":"StartL", "type": "egg"},
+				{"tag":"Start2", "type": "wedge"},
+				{"tag":"Start+", "type": "cross"},
+				],
 
 		"transitions": [
 			{
 				"points": [
-					[13000,700],
-					[8932.3,615],
-					[3182.1,742.1],
+					[-13000,0],
 					[0,0],
 				],
 				"id": "menu-game",
-				"duration": -1.0,
-				"rotationDuration": -0.66
+				"duration": 5.0,
+				"rotationDuration": 0.0
 			},
 			{
 				"points": [
@@ -1216,28 +1232,39 @@
 				],
 				"id": "menu-pause",
 				"duration": -1.0,
-				"rotationDuration": -0.66
+				"rotationDuration": -0.25
 			}
 		],
 
 		"preview": {
 			"window": {
-				"oldposition": [0,0],
-				"oldsize": [1800, 1800],
-				"position": [0,0],
-				"size": 1550.0,
+				"position": [-1000,-1100],
+				"size": 2200.0,
 			},
 			"hidePermanentLines": true,
 
-	        "stations": [
-				{"tag":"blue1", "type": "circle", "position": [-272, 126], "ghost": true, "interchange": false},
-	        ],
+					"stations": [
+				{"tag":"blue1", "type": "circle", "position": [-272, 126], "ghost": false, "interchange": false},
+				{"tag":"blue2", "type": "square", "position": [-30, 126], "ghost": false, "interchange": false},
+				{"tag":"blue3", "type": "triangle", "position": [418, -25], "ghost": false, "interchange": false},
+				{"tag":"blue4", "type": "triangle", "position": [418, -440], "ghost": false, "interchange": false},
+				{"tag":"blue5", "type": "circle", "position": [418, -630], "ghost": false, "interchange": false},
+				{"tag":"blue6", "type": "circle", "position": [588, -720], "ghost": false, "interchange": false},
+				{"tag":"green3", "type": "circle", "position": [-30, -338], "ghost": false, "interchange": false},
+				{"tag":"green4", "type": "circle", "position": [162, -440], "ghost": false, "interchange": false},
+				{"tag":"green5", "type": "circle", "position": [645, -303], "ghost": false, "interchange": false},
+					],
 
 			"lines": [
-	            {
-	            	"index": 3,
+							{
+								"index": 3,
 					"links": [
 						{"station": "blue1", "stops": [ {"direction": "EAST", "platform": 0}, ], },
+						{"station": "blue2", "stops": [ {"direction": "WEST", "platform": 0}, {"direction": "EAST", "platform": 0}, ], },
+						{"station": "blue3", "stops": [ {"direction": "NORTHWEST", "platform": 0}, {"direction": "SOUTH", "platform": 0}, ], },
+						{"station": "blue4", "stops": [ {"direction": "NORTH", "platform": 0}, {"direction": "SOUTH", "platform": 0}, ], },
+						{"station": "blue5", "stops": [ {"direction": "NORTH", "platform": 0}, {"direction": "EAST", "platform": 0}, ], },
+						{"station": "blue6", "stops": [ {"direction": "NORTHWEST", "platform": 0}, ], },
 					],
 					"startAssets": ["Locomotive", "Locomotive", "Carriage", "Carriage"],
 					"canEditTrains": false
@@ -1246,14 +1273,15 @@
 					"index": 4,
 					"links": [
 						{"station": "blue1", "stops": [ {"direction": "EAST", "platform": 1}, ], },
+						{"station": "blue2", "stops": [ {"direction": "WEST", "platform": -1}, {"direction": "SOUTH", "platform": 0}, ], },
+						{"station": "green3", "stops": [ {"direction": "NORTH", "platform": 0}, {"direction": "EAST", "platform": 0}, ], },
+						{"station": "green4", "stops": [ {"direction": "NORTHWEST", "platform": 0}, {"direction": "EAST", "platform": 0}, ], },
+						{"station": "blue4", "stops": [ {"direction": "WEST", "platform": 0}, {"direction": "EAST", "platform": 0}, ], },
+						{"station": "green5", "stops": [ {"direction": "SOUTHWEST", "platform": 0}, ], },
 					],
 					"startAssets": ["Locomotive", "Locomotive", "Carriage", "Carriage"],
 					"canEditTrains": false
 				},
-	        ],
+					],
 		},
 	}
-
-
-# customLocalNameNativeScript: Циудад Циталля
-# Isana eisaamiquip polarisinaq i linquiisaq polarisi ir ta linquiisaq seri tirsurii polarisi
